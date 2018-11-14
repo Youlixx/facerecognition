@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*
 import numpy as np
 import cv2 as cv
+import dlib
+#import face_recognition
+#import
 def reco_image(path):
     face_cascade = cv.CascadeClassifier('E:/Coding/xml/haarcascade_frontalface_default.xml')
     eye_cascade = cv.CascadeClassifier('E:/Coding/xml/haarcascade_eye.xml')
@@ -45,4 +48,7 @@ def reco_webcam():
         cv.imshow('img',frame)
         if cv.waitKey(1) == 27:
             break  # esc to quit
+    #Video_capture.release()
     cv.destroyAllWindows()
+
+#def reco_visage():
