@@ -20,8 +20,8 @@ import matplotlib.pyplot as plt
 #Détection de visages
 
 
-face_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/haarcascade_frontalface_default.xml')
-eye_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/haarcascade_eye.xml')
+face_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/xml/haarcascade_frontalface_default.xml')
+eye_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/xml/haarcascade_eye.xml')
 img = cv.imread('C:/Users/gui-f/dossierJ0/data/test.jpg')
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
@@ -39,9 +39,9 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 
 #détection de visages en continu:
-'''face_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/haarcascade_frontalface_default.xml')
+'''face_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/xml/haarcascade_frontalface_default.xml')
 
-eye_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/haarcascade_eye.xml')
+eye_cascade = cv.CascadeClassifier('C:/Users/gui-f/dossierJ0/xml/haarcascade_eye.xml')
 
    #Webcam capture
 video_capture = cv.VideoCapture(0)
