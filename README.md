@@ -1,2 +1,2 @@
 # facerecognition
-# GABORIAUD Florian
+# A faire : deeplearning avec dlib...
